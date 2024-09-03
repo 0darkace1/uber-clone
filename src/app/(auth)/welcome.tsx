@@ -60,6 +60,7 @@ const Onboarding = () => {
         title={isLastSlide ? 'Get Started' : 'Next'}
         className="w-11/12 mt-10"
         onPress={() => {
+          // eslint-disable-next-line no-unused-expressions
           isLastSlide
             ? router.replace('/(auth)/sign-up')
             : swiperRef.current?.scrollBy(1);
